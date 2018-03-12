@@ -1,0 +1,14 @@
+.gfonts {
+font-family: 'Rammetto One', cursive;
+font-family: 'Mina', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Roboto Slab', serif;
+}
+
+.chatbox {
+    height: 15rem;
+}
+
+.formwidth {
+    width: 70%;
+}
