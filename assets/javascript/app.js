@@ -46,6 +46,7 @@ $("#click-button").on("click", function() {
         losses: playerone.losses,
         chat: playerone.chat,
     });
+    $("#player1").text(playerone.name)
 });
 
 $("#chat-send").on("click", function() {
@@ -56,4 +57,5 @@ $("#chat-send").on("click", function() {
     });
     var chatadd = $("<p>"+playerone.name+": "+playerone.chat+"</p>")
     $(".chatbox").append(chatadd)
+    $("#form1").reset()
 });
