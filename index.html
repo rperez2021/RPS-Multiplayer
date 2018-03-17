@@ -34,8 +34,8 @@
                 <form>
                     <div class="form-inline" id="form1">
                         <label for="name" class="gfonts">Name: </label>
-                        <input type="name" class="form-control mx-1" id="name-input">
-                        <button type="button" class="btn btn-primary" id="click-button">Submit</button>
+                        <input type="text" class="form-control mx-1" id="name-input">
+                        <button type="submit" class="btn btn-primary" id="click-button">Submit</button>
                     </div>
                 </form>
             </div>
@@ -43,20 +43,25 @@
         </div>
         <div class="row mt-2">
 
-            <div class="col-3 border primary">
+            <div class="col-3 border primary" id="player1panel">
                 <p id="player1">Waiting for Player 1</p>
-                <p id="p1rock">Rock</p>
-                <p id="p1paper">Paper</p>
-                <p id="p1scissors">Scissors</p>
+                <p class="selections" id="p1rock" value="rock">Rock</p>
+                <p class="selections" id="p1paper" value="paper">Paper</p>
+                <p class="selections" id="p1scissors" value="scissors">Scissors</p>
+                <p class="selections" id="player1Stats">Stats</p>
             </div>
             <div class="col-1"></div>
-            <div class="col-3 border primary"></div>
+            <div class="col-3 border primary" id="aoutcome">
+                <h3 class="panel-title text-center" id="outcome"></h3>
+		        <h3 class="panel-title text-center" id="woutcome">Rock-Paper-Scissors</h3>
+            </div>
             <div class="col-1"></div>
-            <div class="col-3 border primary">
+            <div class="col-3 border primary" id="player2panel">
                 <p id="player2">Waiting for Player 2</p>
-                <p id="p2rock">Rock</p>
-                <p id="p2paper">Paper</p>
-                <p id="p2scissors">Scissors</p>
+                <p class="selections" id="p2rock" value="rock">Rock</p>
+                <p class="selections" id="p2paper" value="paper">Paper</p>
+                <p class="selections" id="p2scissors" value="scissors">Scissors</p>
+                <p class="selections" id="player2Stats">Stats</p>
             </div>
 
         </div>
@@ -72,8 +77,8 @@
         <form>
                 <div class="form-inline" id="form2">
                   
-                    <input type="chattext" class="form-control mx-1" id="chat-input" style="width:80%" id="name">
-                    <button type="button" class="btn btn-primary" id="chat-send">Send</button>
+                    <input type="text" class="form-control mx-1" id="chat-input" style="width:80%" id="name">
+                    <button type="submit" class="btn btn-primary" id="chat-send">Send</button>
                 </div>
             </form>
             </div>
@@ -90,7 +95,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <script src="assets/javascript/app.js"></script>
+        <script src="assets/javascript/app2.js"></script>
 </body>
 
 </html>
